@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <style>
+        /* Navbar styles here*/
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: linear-gradient(45deg, #FFA07A, #FF6347);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            /* z-index: 1000; */
+        }
+
+        .navbar .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-family: cursive;
+            font-style: oblique;
+        }
+
+        .navbar ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .navbar .cta-button {
+            padding: 8px 20px;
+            background-color: white;
+            color: #FF6347;
+            border: none;
+            border-radius: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .navbar .cta-button:hover {
+            background-color: #FF6347;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .navbar ul {
+                display: none;
+            }
+
+            .navbar .menu-toggle {
+                display: block;
+                font-size: 1.5rem;
+                color: white;
+                cursor: pointer;
+            }
+        }
+
+        /* about us page styles here */
+        #about {
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+
+
+        }
+
+        #about h1 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        #about b {
+            color: #FFA07A;
+
+        }
+
+        .text-container {
+            width: 100%;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            background-color: #ff6347;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-family: cursive;
+            font-style: oblique;
+            color: #333;
+    
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #444;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: linear-gradient(45deg, #FFA07A, #FF6347);
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Pick a Pet</div>
+            <ul>
+                <li><a href="./index.html"> <img src="./images/home loo.png" alt="images" />Home</a></li>
+                <li><a href="./about.html"> <img src="./images/about us logo.png" alt="">About</a></li>
+                <li><img src="./images/dog logo.png" alt=""><img src="./images/cat logo.png" alt=""></li>
+                <li><a href="./services.html"> <img src="./images/services logo.png" alt="">Services</a></li>
+                <li><a href="./adoption.html"> <img src="./images/adoption logo.png" alt="" height="50%"> adopt us</a>
+                </li>
+                <li><a href="./contact.html"> <img src="./images/contact us.png" alt="	">Contact</a></li>
+            </ul>
+
+            <div class="menu-toggle">&#9776;</div>
+        </nav>
+    </header>
+    <br>
+
+    <section id="about">
+        <h1><b>About us</b></h1>
+        <p> <img src="./images/arrow logo.png" alt="images"><b> Welcome to Pick a Pet</b>; your trusted partner in
+            finding the perfect furry, feathered, or scaly companion to
+            brighten your life. We are a passionate team of animal lovers dedicated to connecting people with pets that
+            match their lifestyles, personalities, and homes. At Pick a Pet, we believe that every pet deserves a loving
+            home, and every person deserves the joy of unconditional love that only a pet can provide.
+
+            <p> <img src="./images/arrow logo.png" alt="images"><b>Our Mission;</b>
+                Our mission is simple yet powerful: to build meaningful connections between people and pets. We aim
+                to:Help
+                individuals and families discover pets that complement their unique lives. Promote responsible pet
+                ownership
+                through education and resources.
+                Partner with shelters, breeders, and rescue organizations to provide a safe and ethical platform for pet
+                adoption and purchasing.</p>
+            <p><img src="./images/arrow logo.png" alt="images"><b> We Are;</b>
+                Pick a Pet was born from a shared love for animals and a commitment to fostering happy pet-owner
+                relationships. Our team includes:
+                Animal Behavior Experts who ensure pets are matched based on temperament and needs.Veterinary Advisors
+                who
+                provide guidance on health and wellness.
+                Tech Enthusiasts who design our easy-to-use platform to make your pet search seamless.
+                Support Specialists who are always here to answer your questions and provide personalized
+                recommendations.
+            </p>
+            <p> <img src="./images/arrow logo.png" alt="images" height="" width=""><b>Comprehensive Pet Profiles:</b>
+                Get to
+                know
+                each pet’s personality, history, and care needs with detailed profiles.</p>
+            <p> <img src="./images/arrow logo.png" alt="images"><b>Matching Tools:;</b> Our advanced matching algorithm
+                considersyour preferences and lifestyle to suggest the ideal pets for you.</p>
+
+            <p><img src="./images/arrow logo.png" alt="images"><b>Educational Resources:</b> Access expert articles,
+                videos,
+                and
+                tips on pet care, training, and health.</p>
+
+            <p> <img src="./images/arrow logo.png" alt="images"><b>Community Connection:</b> Join a community of pet
+                lovers
+                to share
+                experiences, ask questions, and celebrate the joy
+                of pet ownership.</p>
+
+            <p><img src="./images/arrow logo.png" alt="images"> <b>Our Promise;</b>
+                At Pick a Pet, we promise to prioritize the well-being of pets and prospective owners alike. We are
+                committedto
+                ethical practices, transparency, and creating a supportive environment where every adoption or purchase
+                feelslike a perfect match.</p>
+    </section>
+
+    <div class="text-container" style="background:linear-gradient(45deg, #FFA07A, #FF6347);">
+        <h1>Join Our Family;</h1>
+
+        <p> Whether you’re a lifelong pet owner or looking to welcome your first furry friend, Pick a Pet is here to
+            guide
+            you every step of the way. Explore our wide range of pets, learn from our resources, and find your ideal
+            companion today. Together, let’s create a world where every pet finds a loving home.</p>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 Pick a Pet All Rights Reserved</p>
+    </footer>
+
+
+</body>
+
+</html>

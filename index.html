@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pick a pet ,the pet shop for buying and adopt a pets</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Georgia, Times, serif;
+            background-color: #f7f7f7;
+        }
+
+        /* Navbar styles here */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: linear-gradient(45deg, #FFA07A, #FF6347);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .navbar ul {    
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-family: cursive;
+            font-style: oblique;
+        }
+
+        .navbar ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .navbar .cta-button {
+            padding: 8px 20px;
+            background-color: white;
+            color: #FF6347;
+            border: none;
+            border-radius: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .navbar .cta-button:hover {
+            background-color: #FF6347;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .navbar ul {
+                display: none;
+            }
+
+            .navbar .menu-toggle {
+                display: block;
+                font-size: 1.5rem;
+                color: white;
+                cursor: pointer;
+            }
+        }
+        /* home styles here */
+        .img{
+            box-shadow: 0px 2px 2px gray;
+        }
+        /* image container styles here */
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10%;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 16px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        .image-container img {
+            /* width: 300px;
+            height: 200px; */
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .image-container img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        div p{
+            align-items: center;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: linear-gradient(45deg, #FFA07A, #FF6347);
+            color: white;
+            margin-top: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: #FF6347;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- <div class="logo"><img src="./images/pick a pet logo 2.png" alt="images" height="70px"></div> -->
+            <div class="logo">Pick a Pet</div>
+            <ul>
+                <li><a href="./index.html"> <img src="./images/home loo.png" alt="images"/>Home</a></li>
+                <li><a href="./about.html"> <img src="./images/about us logo.png" alt="">About</a></li>
+                <li><img src="./images/dog logo.png" alt=""><img src="./images/cat logo.png" alt=""></li>
+                <li><a href="./services.html"> <img src="./images/services logo.png" alt="">Services</a></li>
+                <li><a href="./adoption.html"> <img src="./images/adoption logo.png" alt="" height="50%"> adopt us</a></li>
+                <li><a href="./contact.html"> <img src="./images/contact us.png" alt="	">Contact</a></li>
+                
+            </ul>
+           
+            <div class="menu-toggle">&#9776;</div>
+        </nav>
+    </header>
+    <br>
+    <div class="img"><img src="./images/banner2" alt="images" height="20%" width="100%"></div>
+    <br>
+    <center><p style="font-size: 25px;" color="#FF6347;">we offer a pet's for adoption program and sale process</p></center>
+    <div class="image-container">
+       <div> <a href="./dogs.html"><img src="images/img1.jpg" alt="images" height="80%"> <p><center>Dogs</center></p></a></div>
+      <div> <a href="./cats.html"><img src="./images/img2.jpg" alt="images"> <p><center>Cat's</center></p></a></div>
+       <div> <a href="./birds.html"><img src="./images/img4.jpg" alt="images" height="80%"><p><center>Bird's</center></p> </a></div>
+        <div><a href=""><img src="./images/img3.jpg" alt="images"><p><center>All type of Pet's</center></p> </a></div>
+       
+    </div>
+    <footer>
+        <p>&copy; 2024 Pick a Pet All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

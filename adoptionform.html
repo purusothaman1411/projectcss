@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adoption form</title>
+    <style>
+         body {
+            margin: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #f7f7f7;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: linear-gradient(45deg, #FFA07A, #FF6347);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .navbar ul {    
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-family: cursive;
+            font-style: oblique;
+        }
+
+        .navbar ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .navbar .cta-button {
+            padding: 8px 20px;
+            background-color: white;
+            color: #FF6347;
+            border: none;
+            border-radius: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .navbar .cta-button:hover {
+            background-color: #FF6347;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .navbar ul {
+                display: none;
+            }
+
+            .navbar .menu-toggle {
+                display: block;
+                font-size: 1.5rem;
+                color: white;
+                cursor: pointer;
+            }
+        }
+        /* form styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input, 
+        .form-group select, 
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #FFA07A;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #FF6347;
+        }
+
+        .form-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .form-footer a {
+            color: #FFA07A;
+            text-decoration: none;
+        }
+
+        .form-footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- <div class="logo"><img src="./images/pick a pet logo 2.png" alt="images" height="70px"></div> -->
+            <div class="logo">Pick a Pet</div>
+            <ul>
+                <li><a href="./index.html"> <img src="./images/home loo.png" alt="images"/>Home</a></li>
+                <li><a href="./about.html"> <img src="./images/about us logo.png" alt="">About</a></li>
+                <li><img src="./images/dog logo.png" alt=""><img src="./images/cat logo.png" alt=""></li>
+                <li><a href="./services.html"> <img src="./images/services logo.png" alt="">Services</a></li>
+                <li><a href="./adoption.html"> <img src="./images/adoption logo.png" alt="" height="50%"> adopt us</a></li>
+                <li><a href="./contact.html"> <img src="./images/contact us.png" alt="	">Contact</a></li>
+                
+            </ul>
+           
+            <div class="menu-toggle">&#9776;</div>
+        </nav>
+    </header>
+    <br>
+    <div class="form-container">
+    <h1>Adopt a Pet</h1>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="pet-type">Select Pet:</label>
+            <select id="pet-type" name="pet-type" required>
+                <option value="">-- Choose a Pet --</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="bird">Bird</option>
+               
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Home Address:</label>
+            <input type="text" id="address" name="address" placeholder="Enter your home address" required>
+        </div>
+
+        <div class="form-group">
+            <label for="reason">Why do you want to adopt a pet?</label>
+            <textarea id="reason" name="reason" rows="4" placeholder="Please explain your reasons" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="experience">Do you have experience with pets?</label>
+            <select id="experience" name="experience" required>
+                <option value="">-- Select an Option --</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Submit Application">
+        </div>
+    </form>
+    <div class="form-footer">
+        <a href="/adoption.html">Back to adoption</a>
+    </div>
+</div>
+
+
+
+</body>
+</html>
